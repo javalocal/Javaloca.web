@@ -1,0 +1,22 @@
+pertama clone git
+- buat folder (bebas) terus buka vsc pilih folder yg tadi dibuat, buka new terminal ketik code: 
+- clone https://github.com/javalocal/Javaloca.web.git
+
+
+cara remote
+- cek foldernya dulu udah bener blom (git init)
+- kalau blom masuk remote (git remote add origin https://github.com/javalocal/Javaloca.web.git)
+
+cara push file code
+- sebelum masuk upload file / update pull dulu
+- cek remote dulu (git remote -v)
+- git add .
+- git commit -m "terserah mau kasih keterangan apa"
+- git push -u origin utama
+
+
+cara pull
+- cek remote dulu (git remote -v)
+- git pull  
+
+
