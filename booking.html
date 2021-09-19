@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket Payment</title>
+    <link rel="stylesheet" href="booking.css" />
+  </head>
+  <body>
+    <h1>Booking Ticket-Pesawat</h1>
+</body>
+  <body>
+    <div class="container">
+      <form>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" autofocus autocomplete="off" />
+        <label for="destinasi">Destinasi:</label>
+        <input type="text" id="destinasi" list="pilihanDestinasi" autocomplete="off" />
+        <datalist id="pilihanDestinasi">
+          <option value="Bromo">Bromo</option>
+          <option value="Borobudur">Borobudur</option>
+          <option value="Gedung Sate">Gedung Sate</option>
+          <option value="Lawang Sewu">Lawang Sewu</option>
+        </datalist>
+        <label for="status">Status:</label>
+        <input type="text" id="status" list="pilihanStatus" autocomplete="off" />
+        <datalist id="pilihanStatus">
+          <option value="Dewasa">Dewasa</option>
+          <option value="Anak-anak">Anak-anak</option>
+        </datalist>
+        <label for="jumlah">Jumlah Tiket:</label>
+        <input type="number" id="jumlah" />
+        <label for="subtotal">Subtotal:</label>
+        <input type="number" id="subtotal" disabled />
+        <label for="diskon">Diskon:</label>
+        <input type="number" id="diskon" disabled />
+        <label for="total">Total:</label>
+        <input type="number" id="total" disabled />
+
+        <div class="tombol">
+          <input type="submit" value="Pesan" id="pesan" />
+          <input type="button" value="Hapus" id="hapus" />
+        </div>
+      </form>
+
+      <!-- Jika berhasil pesan akan menampilkan berkas output nya -->
+      <div class="output">
+        <h2>TICKET PAYMENT</h2>
+        <p>Nama: <span id="namaOutput"></span></p>
+        <p>Destinasi: <span id="destinasiOutput"></span></p>
+        <p>Status: <span id="statusOutput"></span></p>
+        <p>Jumlah Tiket: <span id="jumlahOutput"></span></p>
+        <p>Subtotal: <span id="subtotalOutput"></span></p>
+        <p>Diskon: <span id="diskonOutput"></span></p>
+        <p>Total: <span id="totalOutput"></span></p>
+        <p><sup>*</sup>Harga 1 tiket: <span id="hargaTiket"></span></p>
+      </div>
+    </div>
+
+    <div class="informasi">
+      <span>Catatan:</span>
+      <span><sup>*</sup>Destinasi hanya terdapat 3 kota: Bromo, Borobudur, Gedung Sate, dan Lawang Sewu <span class="">(Perhatikan huruf kecil dan besar nya)</span></span>
+      <span><sup>*</sup>Status hanya terdapat 2: Dewasa dan Anak-anak <span>(Perhatikan huruf kecil dan besar nya)</span></span>
+      <span><sup>*</sup>Jika membeli Jumlah Tiket lebih dari 5 bisa mendapat diskon 15% <span>(Tidak lebih dari 5 maka tidak dapat diskon)</span></span>
+    </div>
+    <script src="booking.js"></script>
+  </body>
+</html>
