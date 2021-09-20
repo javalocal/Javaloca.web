@@ -22,7 +22,7 @@ tombolPesan.addEventListener("click", function (e) {
       document.getElementById("namaOutput").innerText = nama.value;
     }
 
-    // Mengecek inputan destinasi sesuai 3 Pilihan: Bromo, Jakarta dan Surabaya
+    // Mengecek inputan destinasi sesuai 4 Pilihan: Bromo, Borobudur, Gedung Sate dan Lawang Sewu
     if (destinasi.value == "Bromo") {
       document.getElementById("destinasiOutput").innerText = destinasi.value;
     } else if (destinasi.value == "Borobudur") {
@@ -49,29 +49,29 @@ tombolPesan.addEventListener("click", function (e) {
 
     // Mengecek antara status dan destinasi
     if (destinasi.value == "Bromo" && status.value == "Dewasa") {
-      harga = 200000;
-      hargaPerTiket.innerText = harga + " (Dua Ratus Ribu)";
+      harga = 700000;
+      hargaPerTiket.innerText = harga + " (Tujuh Ratus Ribu)";
     } else if (destinasi.value == "Bromo" && status.value == "Anak-anak") {
-      harga = 100000;
-      hargaPerTiket.innerText = harga + " (Seratus Ribu)";
+      harga = 600000;
+      hargaPerTiket.innerText = harga + " (Enam Ratus Ribu)";
     } else if (destinasi.value == "Borobudur" && status.value == "Dewasa") {
-      harga = 300000;
-      hargaPerTiket.innerText = harga + " (Tiga Ratus Ribu)";
+      harga = 800000;
+      hargaPerTiket.innerText = harga + " (Delapan Ratus Ratus Ribu)";
     } else if (destinasi.value == "Borobudur" && status.value == "Anak-anak") {
-      harga = 200000;
-      hargaPerTiket.innerText = harga + " (Dua Ratus Ribu)";
+      harga = 700000;
+      hargaPerTiket.innerText = harga + " (Tujuh Ratus Ribu)";
     } else if (destinasi.value == "Gedung Sate" && status.value == "Dewasa") {
-      harga = 400000;
-      hargaPerTiket.innerText = harga + " (Empat Ratus Ribu)";
+      harga = 900000;
+      hargaPerTiket.innerText = harga + " (Sembilan Ratus Ribu)";
     } else if (destinasi.value == "Gedung Sate" && status.value == "Anak-anak") {
-      harga = 300000;
-      hargaPerTiket.innerText = harga + " (Tiga Ratus Ribu)";
+      harga = 800000;
+      hargaPerTiket.innerText = harga + " (Delapan Ratus Ribu)";
     } else if (destinasi.value == "Lawang Sewu" && status.value == "Dewasa") {
-      harga = 500000;
-      hargaPerTiket.innerText = harga + " (Lima Ratus Ribu)";
+      harga = 1000000;
+      hargaPerTiket.innerText = harga + " (Satu Juta)";
     } else if (destinasi.value == "Lawang Sewu" && status.value == "Anak-anak") {
-      harga = 400000;
-      hargaPerTiket.innerText = harga + " (Empat Ratus Ribu)";
+      harga = 900000;
+      hargaPerTiket.innerText = harga + " (Sembilan Ratus Ribu)";
     }
 
     // Mengecek inputan jumlah / tiket jika lebih dari 5 maka akan dikasih diskon, jika dibawah 5 tidak dapat diskon

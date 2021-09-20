@@ -32,9 +32,13 @@ tombolPesan.addEventListener("click", function (e) {
       alert("Pilihan Destinasi hanya Bromo, Borobudur, Gedung Sate, dan Lawang Sewu");
     }
 
-    if (status.value == "Dewasa") {
+    if (status.value == "Eksklusif") {
       document.getElementById("statusOutput").innerText = status.value;
-    } else if (status.value == "Anak-anak") {
+    } else if (status.value == "Bisnis") {
+      document.getElementById("statusOutput").innerText = status.value;
+    }else if (status.value == "Ekonomi") {
+      document.getElementById("statusOutput").innerText = status.value;
+    }else if (status.value == "Premium") {
       document.getElementById("statusOutput").innerText = status.value;
     } else {
       alert("Pilihan status hanya untuk Dewasa dan Anak-anak saja!");
@@ -43,30 +47,54 @@ tombolPesan.addEventListener("click", function (e) {
     let harga = 0;
     let hargaPerTiket = document.getElementById("hargaTiket");
 
-    if (destinasi.value == "Bromo" && status.value == "Dewasa") {
+    if (destinasi.value == "Bromo" && status.value == "Eksklusif") {
+      harga = 300000;
+      hargaPerTiket.innerText = harga + " (Tiga Ratus Ribu)";
+    } else if (destinasi.value == "Bromo" && status.value == "Premium") {
       harga = 200000;
       hargaPerTiket.innerText = harga + " (Dua Ratus Ribu)";
-    } else if (destinasi.value == "Bromo" && status.value == "Anak-anak") {
+    }else if (destinasi.value == "Bromo" && status.value == "Bisnis") {
       harga = 100000;
       hargaPerTiket.innerText = harga + " (Seratus Ribu)";
-    } else if (destinasi.value == "Borobudur" && status.value == "Dewasa") {
+    }else if (destinasi.value == "Bromo" && status.value == "Ekonomi") {
+      harga = 50000;
+      hargaPerTiket.innerText = harga + " (Lima Puluh Ribu)";
+    } else if (destinasi.value == "Borobudur" && status.value == "Eksklusif") {
+      harga = 400000;
+      hargaPerTiket.innerText = harga + " (Empat Ratus Ribu)";
+    } else if (destinasi.value == "Borobudur" && status.value == "Premium") {
       harga = 300000;
       hargaPerTiket.innerText = harga + " (Tiga Ratus Ribu)";
-    } else if (destinasi.value == "Borobudur" && status.value == "Anak-anak") {
+    }else if (destinasi.value == "Borobudur" && status.value == "Bisnis") {
       harga = 200000;
       hargaPerTiket.innerText = harga + " (Dua Ratus Ribu)";
-    } else if (destinasi.value == "Gedung Sate" && status.value == "Dewasa") {
-      harga = 400000;
-      hargaPerTiket.innerText = harga + " (Empat Ratus Ribu)";
-    } else if (destinasi.value == "Gedung Sate" && status.value == "Anak-anak") {
-      harga = 300000;
-      hargaPerTiket.innerText = harga + " (Tiga Ratus Ribu)";
-    } else if (destinasi.value == "Lawang Sewu" && status.value == "Dewasa") {
+    }else if (destinasi.value == "Borobudur" && status.value == "Ekonomi") {
+      harga = 100000;
+      hargaPerTiket.innerText = harga + " (Seratus Ribu)";
+    } else if (destinasi.value == "Gedung Sate" && status.value == "Eksklusif") {
       harga = 500000;
       hargaPerTiket.innerText = harga + " (Lima Ratus Ribu)";
-    } else if (destinasi.value == "Lawang Sewu" && status.value == "Anak-anak") {
+    } else if (destinasi.value == "Gedung Sate" && status.value == "Premium") {
       harga = 400000;
       hargaPerTiket.innerText = harga + " (Empat Ratus Ribu)";
+    } else if (destinasi.value == "Gedung Sate" && status.value == "Bisnis") {
+      harga = 300000;
+      hargaPerTiket.innerText = harga + " (Tiga Ratus Ribu)";
+    } else if (destinasi.value == "Gedung Sate" && status.value == "Ekonomi") {
+      harga = 200000;
+      hargaPerTiket.innerText = harga + " (Dua Ratus Ribu)";
+    } else if (destinasi.value == "Lawang Sewu" && status.value == "Eksklusif") {
+      harga = 600000;
+      hargaPerTiket.innerText = harga + " (Enam Ratus Ribu)";
+    } else if (destinasi.value == "Lawang Sewu" && status.value == "Premium") {
+      harga = 500000;
+      hargaPerTiket.innerText = harga + " (Lima Ratus Ribu)";
+    }else if (destinasi.value == "Lawang Sewu" && status.value == "Bisnis") {
+      harga = 400000;
+      hargaPerTiket.innerText = harga + " (Empat Ratus Ribu)";
+    }else if (destinasi.value == "Lawang Sewu" && status.value == "Ekonomi") {
+      harga = 300000;
+      hargaPerTiket.innerText = harga + " (Tiga Ratus Ribu)";
     }
 
     const convertToNumber = Number(jumlah.value);
