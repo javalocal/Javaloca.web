@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://unpkg.com/feather-icons"></script>
 <style>
     .footer-title{
         color: white;
@@ -98,9 +100,8 @@
   </nav>
 <header>
 
-    <br><br>
     <div id="carouselExampleIndicators" class="carousel slide-fluid" data-ride="carousel" style="width: 100%;">
-      <div class="container" >
+      <div class="container-fluid p-5" >
           <div class="col-13">
               <ol class="carousel-indicators">
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -109,13 +110,13 @@
               </ol>
               <div class="carousel-inner">
                   <div class="carousel-item active">
-                      <img class="d-block w-100" src="https://image.freepik.com/free-vector/summer-sale-banner-with-lifebelt-exotic-palm-trees_1314-2381.jpg" height="400px" alt="First slide" >
+                      <img class="d-block w-100" src="https://image.freepik.com/free-vector/summer-sale-banner-with-lifebelt-exotic-palm-trees_1314-2381.jpg" height="500px" alt="First slide" >
                   </div>
                   <div class="carousel-item">
-                      <img class="d-block w-100" src="https://image.freepik.com/free-vector/summer-sale-design-with-parrot-flower-tropical-palm-leaves_1314-2467.jpg" height="400px" alt="Second slide">
+                      <img class="d-block w-100" src="https://image.freepik.com/free-vector/summer-sale-design-with-parrot-flower-tropical-palm-leaves_1314-2467.jpg" height="500px" alt="Second slide">
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="https://cdn-2.tstatic.net/travel/foto/bank/images/promo-tiket-pesawat-traveloka.jpg" height="400px" alt="Second slide">
+                    <img class="d-block w-100" src="https://cdn-2.tstatic.net/travel/foto/bank/images/promo-tiket-pesawat-traveloka.jpg" height="500px" alt="Second slide">
                 </div>
                   
 
@@ -160,10 +161,10 @@
                   <select class="custom-select my-1 mr-sm-2" id="fromairplane">
                     <option selected>Choose...</option>
                     <option value="jakarta">Soekarno–Hatta international airport, Jakarta</option>
-                    <option value="malang">Abdulrachman Saleh international airport, Malang</option>
+                    <!-- <option value="malang"> Abdulrachman Saleh international airport, Malang</option>
                     <option value="jogja">yogyakarta international airport, Jogja</option>
                     <option value="semarang">Jenderal Ahmad Yani international airport, Semarang</option>
-                    <option value="bandung">Husein Sastranegara international airport, Bandung</option>
+                    <option value="bandung">Husein Sastranegara international airport, Bandung</option> -->
                   </select>
                 </form>
               </div>
@@ -172,33 +173,62 @@
                   <label class="my-1 mr-2" for="toairplane">to</label>
                   <select class="custom-select my-1 mr-sm-2" id="toairplane">
                     <option selected>Choose...</option>
-                    <option value="jakarta">Soekarno–Hatta international airport, Jakarta</option>
+                    <!-- <option value="jakarta">Soekarno–Hatta international airport, Jakarta</option> -->
                     <option value="malang">Abdulrachman Saleh international airport, Malang</option>
-                    <option value="jogja">yogyakarta international airport, Jogja</option>
+                    <!-- <option value="jogja">yogyakarta international airport, Jogja</option>
                     <option value="semarang">Jenderal Ahmad Yani international airport, Semarang</option>
-                    <option value="bandung">Husein Sastranegara international airport, Bandung</option>
+                    <option value="bandung">Husein Sastranegara international airport, Bandung</option> -->
                   </select>
                 </form>
               </div>
               </div>
               <div class="row">
-                <div class="col-sm">
-                  <form action="/action_page.php">
-                    <label for="dateairplane">Departure Date:</label>
-                    <input type="date" id="dateairplane" name="dateairplane">
+                <div class="d-flex justify-content-between-fluid">
+                  <div class="py-2 px-5 bd-highlight">
+                    <form action="/action_page.php">
+                      <label for="dateairplane">Departure Date:</label>
+                      <input type="date" id="dateairplane" name="dateairplane">
+                    </form>
+                  </div>
+                  <div class="py-2 px-5 bd-highlight">
+                    <form class="form-inline">
+                      <label class="my-1 mr-2" for="classairplane">Class</label>
+                      <select class="custom-select my-1 mr-sm-2" id="classairplane">
+                        <option selected>Choose...</option>
+                        <option value="Economy">Economy</option>
+                        <!-- <option value="malang">Business</option> -->
+                      </select>
+                  </div>
+                  <div class="py-2 px-5 bd-highlight">
+                    <div class="input-group">
+                      <span class="input-group-btn">
+                        Jumlah
+                        <button type="button" class="btn btn-default btn-number" onclick="minus('inputNum')"><i data-feather="minus-square"></i></button
+                      ></span>
+    
+                      <input type="text" disabled="disabled" value="1" class="form-control input-number" id="inputNum" style="background-color: rgb(255, 255, 255);" />
+                      <span class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-number" onclick='add("inputNum")'><i data-feather="plus-square"></i></button
+                      ></span>
+                  </div>
+                </div>
+                <!-- <div class="col-sm">
+                  
+                </div>
+                <div class="col-sm-4">
+                  
                   </form>
                 </div>
-                <div class="col-sm">
-                  <form class="form-inline">
-                    <label class="my-1 mr-2" for="classairplane">Class</label>
-                    <select class="custom-select my-1 mr-sm-2" id="classairplane">
-                      <option selected>Choose...</option>
-                      <option value="jakarta">Economy</option>
-                      <option value="malang">Business</option>
-                    </select>
-                  </form>
-                </div>
+                <div class="col-sm-5 mrx-5">
+                  
+                </div> -->
               </div>
+              <div class="row">
+                
+                </div>
+                <div class="col-sm-6 px-10">
+                  <button type="submit" class="btn btn-success px-5" id="Airplane-search"><a href="airplane_hasil" style="color: white;">Search</a></button>
+                </div>
             </div>
   
         </div>
@@ -340,9 +370,34 @@
 
   
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>  
-</body>
+        <script>
+          function add(id) {
+            var inputCount = document.getElementById(id);
+            console.log("I got clicked");
+            if (inputCount.value < 10) {
+              inputCount.value++;
+            } else {
+              alert("MAX");
+            }
+          }
+    
+          function minus(id) {
+            var inputCount = document.getElementById(id);
+            console.log("Minus got clicked");
+            if (inputCount.value > 1) {
+              inputCount.value--;
+            } else {
+              alert("Remove item please");
+            }
+          }
+    
+          feather.replace();
+        </script>
+      </body>
 
 
 </html>
