@@ -5,18 +5,27 @@
     </head>
 
     <body>
-      <nav class=" navbar-expand-md navbar-light" style="background-color: rgb(197, 197, 197);">
+      <nav class=" navbar-expand-lg navbar-light" style="background-color: rgb(197, 197, 197);">
         <div class="d-flex bd-highlight" style="padding-bottom: 0px;">
-          <div class="p-2 bd-highlight"> <a href="main.html" class="navbar-brand" >Javaloca</a></div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="p-2 bd-highlight"> <a href="index.html" class="navbar-brand" ><img src="https://1.bp.blogspot.com/-7cKt5UxU9A8/YUgW-G0Y_QI/AAAAAAAAAxc/01xNgeoWNqsqoP6wnYvfydB7bPUG7wTnQCLcBGAsYHQ/s320/javaloca2-removebg-preview.png" width="175px" alt=""></a></div>
           <div class="ml-auto p-2 bd-highlight">
           </div>
           <div  class="navbar justify-content-end"  >
             <ul class="nav justify-content-end"  >
-              <li class="nav-item" style="padding-left: 50px;" >
-                <a class="nav-link" href="faq.html" style="color: black;">FAQ</a>
-              </li>
               <li class="nav-item" >
-                <a class="nav-link" href="#" style="color: black;">Account</a>
+                <a class="nav-link" href="faq.html" style="color: black;"><span class="material-icons" style="font-size: 30px;">question_answer</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="material-icons" style="font-size: 30px;">person_outline</span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: rgb(197, 197, 197);;">
+                  <a class="dropdown-item" href="Login.html">Sign in</a>
+                  <a class="dropdown-item" href="Signup.html">Sign up</a>
+                </div>
               </li>
            
             </ul>
@@ -24,17 +33,16 @@
           </div>
         </div>
       
-    
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="promo.html">Promo <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link" href="promo.html"> <span class="material-icons" style="font-size: 20px">redeem</span> Promo </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Pratner.html">Pratner with us</a>
+              <a class="nav-link" href="Pratner.html"><span class="material-icons" style="font-size: 20px;">business_center</span> Pratner with us </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Booking.html">My booking</a>
+              <a class="nav-link" href="Booking.html"><span class="material-icons" style="font-size: 20px;">book</span> My booking</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0" style="padding-right: 10px;">
@@ -43,34 +51,38 @@
         </form>
           </div>
         
-    
-        <ul class="nav justify-content-center" >
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Transport
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="Airplane.html">Airplane</a>
-              <a class="dropdown-item" href="Train.html">Train</a>
+          <div class="d-flex justify-content-center" >
+            <div class="p-2 bd-highlight">
+                <ul class="navbar-nav dropdown">
+                    <a class="nav-link dropdown-toggle" style="color: black; " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Transport
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="Airplane.html">Airplane <span class="material-icons" style="font-size: 20px;">flight</span></a>
+                      <a class="dropdown-item" href="Train.html">Train <span class="material-icons" style="font-size: 20px;">directions_subway</span></a>
+                    </div>
+                </ul>
             </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Accommodations
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="Hotel.html">Hotel</a>
-              <a class="dropdown-item" href="Villa.html">Villa</a>
+            <div class="p-2 bd-highlight">
+                <ul class="navbar-nav dropdown">
+                    <a class="nav-link dropdown-toggle" style="color: black; padding-left: 50px;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Accommodations
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="Hotel.html">Hotel <span class="material-icons" style="font-size: 20px;">bed</span></a>
+                      <a class="dropdown-item" href="Villa.html">Villa <span class="material-icons" style="font-size: 20px;">holiday_village</span></a>
+                    </div>
+                </ul>
             </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="Vacation.html" style="color: black;">Thing to do</a>
-          </li>
-        </ul>
+            <div class="p-2 bd-highlight">
+                <ul class="navbar-nav">
+                    <a class="nav-link active" href="Vacation.html" style="color: black; padding-left: 50px;">
+                    Thing to do</a>
+                </ul>
+            </div>
+          </div>
     
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+       
       
       </nav>
           <br>
@@ -277,51 +289,82 @@
 
 
 
-          <footer>
-
-            <div class="footer-bottom bg-dark" style="padding-bottom: 8%;">
-                <div class="d-flex flex-row bd-highlight mb-3">
-                  <div class="p-2 bd-highlight">
-                    <div  class="d-flex flex-column bd-highlight mb-3">
-          
-                      <div class="p-2 bd-highlight" style="color: rgb(189, 189, 189);">
-                        <h3>Javaloca</h3>
-                        <p >Javaloca adalah jembatan anda untuk bertreveling kemana pun dan kapan pun dengan akses yang mudah kita percaya dengan sinergi yang
-                          kita miliki akan membawa anda kedalam dunia traveling yang menanjukan, dengan javaloca kapan pun dan dimana pun anda dapat merencanakan dengan mudah.
-                        </p>
-                        <br>
-                        <br>
+                   <footer>
+                    <div class="container-fluid footer-bottom bg-dark p-5 mr-auto">
+                        <div class="row">
+                            <div class="col-lg-8" style="color: rgb(189, 189, 189);padding-right: 10%;">
+                                <h3 class="footer-title">Javaloca</h3>
+                                <br>
+                                <p class="text-justify">Javaloca adalah jembatan anda untuk bertreveling kemana pun dan kapan pun dengan akses yang mudah kita percaya dengan sinergi yang
+                                  kita miliki akan membawa anda kedalam dunia traveling yang menanjukan, dengan javaloca kapan pun dan dimana pun anda dapat merencanakan dengan mudah.
+                                </p>
+                                <br><br>
+                            </div>
+                
+                            <div class="col-md p-5">
+                                <button type="button" class="btn btn-outline-secondary btn-lg px-5 py-3" ><h4>Partner with us</h4> </button>
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-sm">
+                                <H3 class="footer-title">About</H3>
+                                <br>
+                                <ul class="footer-nav nav flex-column" >
+                                  <li class="nav-item"><a href="contactus.html" style="color: rgb(189, 189, 189);">Contact Us</a></li>
+                                  <li class="nav-item"><a href="hoowbook.html" style="color: rgb(189, 189, 189);">How to Book</a></li>
+                                  <li class="nav-item"><a href="aboutus.html" style="color: rgb(189, 189, 189);">About Us</a></li>
+                                  <li class="nav-item"><a href="terms.html" style="color: rgb(189, 189, 189);">Terms</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="col-sm" style="justify-content: center;">
+                                <H3 class="footer-title">Product</H3>
+                                <br>
+                                <ul class="footer-nav nav flex-column justify-content-center" >
+                                  <li class="nav-item"><a href="" style="color: rgb(189, 189, 189);">Airplane</a></li>
+                                  <li class="nav-item"><a href="" style="color: rgb(189, 189, 189);">train</a></li>
+                                  <li class="nav-item"><a href="hotel_hasil.html" style="color: rgb(189, 189, 189);">Hotel</a></li>
+                                  <li class="nav-item"><a href="" style="color: rgb(189, 189, 189);">Villa</a></li>
+                                </ul>
+                            </div>
+                
+                                <div class="col-sm" style="justify-content: center;">
+                                    <H3 class="footer-title">Orther</H3>
+                                    <br>
+                                    <ul class="footer-nav nav flex-column justify-content-center" >
+                                      <li class="nav-item"><a href="vacation.html" style="color: rgb(189, 189, 189);">Vacation</a></li>
+                                      <li class="nav-item"><a href="promo.html" style="color: rgb(189, 189, 189);">Promo</a></li>
+                                      <li class="nav-item"><a href="faq.html" style="color: rgb(189, 189, 189);">Faq</a></li>
+                                      <li class="nav-item"><a href="mybooking.html" style="color: rgb(189, 189, 189);">My booking</a></li>
+                                    </ul>
+                            </div>
+                            <div class="col-sm" style="justify-content: center;">
+                                <H3 class="footer-title">Follow us</H3>
+                                <br>
+                                <ul class="footer-nav nav flex-column justify-content-center" >
+                                    <li class="nav-item"><a href="https://www.instagram.com/gionandrian/" style="color: rgb(189, 189, 189);"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" 
+                                        alt="" width="25" height="22" style="padding-right: 6px;">Instagram</a></li>
+                    
+                                        <li class="nav-item"><a href="https://m.facebook.com/groups/350289376363274/?refid=46&tsid=0.8206438855466394&source=result" style="color: rgb(189, 189, 189);"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
+                                            alt="" width="25" height="22" style="padding-right: 6px;">Facebook</a></li>       
+                                            
+                                            <li class="nav-item"><a href="https://twitter.com/elonmusk" style="color: rgb(189, 189, 189);"><img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" 
+                                                alt="" width="25" height="22" style="padding-right: 6px;">twiter</a></li>       
+                                    
+                                                <li class="nav-item"><a href="" style="color: rgb(189, 189, 189);"><img src="https://1.bp.blogspot.com/-onvhHUdW1Us/YI52e9j4eKI/AAAAAAAAE4c/6s9wzOpIDYcAo4YmTX1Qg51OlwMFmilFACLcBGAsYHQ/s1600/Logo%2BLinkedin.png" 
+                                                    alt="" width="25" height="22" style="padding-right: 6px;">Linkedin</a></li>       
+                                        
+                                
+                                        </ul>
+                            </div>
+                          </div>
+                         
                       </div>
-                      <div class="p-2 bd-highlight" style="color: rgb(189, 189, 189);">
-                        <H3>About</H3>
-                        <ul class="footer-nav nav flex-column" >
-                          <li class="nav-item"><a href="" style="color: rgb(189, 189, 189);">Contact Us</a></li>
-                          <li class="nav-item"><a href="" style="color: rgb(189, 189, 189);">How to Book</a></li>
-                          <li class="nav-item"><a href="" style="color: rgb(189, 189, 189);">About Us</a></li>
-                          <li class="nav-item"><a href="" style="color: rgb(189, 189, 189);">Terms</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="p-2 bd-highlight" >
-                    <div class="d-flex flex-column bd-highlight mb-3">
-                      <div class="p-2 bd-highlight">
-                        <H3>About</H3>
-                        <ul class="footer-nav nav flex-column" >
-                          <li class="nav-item"><a href="" style="color: rgb(189, 189, 189);">Contact Us</a></li>
-                          <li class="nav-item"><a href="" style="color: rgb(189, 189, 189);">How to Book</a></li>
-                          <li class="nav-item"><a href="" style="color: rgb(189, 189, 189);">About Us</a></li>
-                          <li class="nav-item"><a href="" style="color: rgb(189, 189, 189);">Terms</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-          
-          
-            </div>
-          
-          </footer>
+                  
+                
+                  
+                </footer>
 
 
 
