@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <link rel="stylesheet" href="tamplate_sm.css">
   </head>
 
 
@@ -22,11 +23,8 @@
         </div>
         <div  class="navbar justify-content-end"  >
           <ul class="nav justify-content-end"  >
-            <li class="nav-item" >
-              <a class="nav-link" href="faq.html" style="color: black;"><span class="material-icons" style="font-size: 30px;">question_answer</span></a>
-            </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="navbarDropdownMenuLink" data-placement="botom" title="Account" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="material-icons" style="font-size: 30px;">person_outline</span>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: rgb(197, 197, 197);;">
@@ -40,8 +38,8 @@
         </div>
       </div>
     
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+      <div class="collapse navbar-collapse" style="font-size: 20px;" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" >
           <li class="nav-item">
             <a class="nav-link" href="promo.html"> <span class="material-icons" style="font-size: 20px">redeem</span> Promo </a>
           </li>
@@ -51,56 +49,55 @@
           <li class="nav-item">
             <a class="nav-link" href="Booking.html"><span class="material-icons" style="font-size: 20px;">book</span> My booking</a>
           </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0" style="padding-right: 10px;">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      </ul> 
         </div>
       
-        <div class="d-flex justify-content-center" >
-          <div class="p-2 bd-highlight">
-              <ul class="navbar-nav dropdown">
-                  <a class="nav-link dropdown-toggle" style="color: black; " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Transport
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="Airplane.html">Airplane <span class="material-icons" style="font-size: 20px;">flight</span></a>
-                    <a class="dropdown-item" href="Train.html">Train <span class="material-icons" style="font-size: 20px;">directions_subway</span></a>
-                  </div>
-              </ul>
-          </div>
-          <div class="p-2 bd-highlight">
-              <ul class="navbar-nav dropdown">
-                  <a class="nav-link dropdown-toggle" style="color: black; padding-left: 50px;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Accommodations
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="Hotel.html">Hotel <span class="material-icons" style="font-size: 20px;">bed</span></a>
-                    <a class="dropdown-item" href="Villa.html">Villa <span class="material-icons" style="font-size: 20px;">holiday_village</span></a>
-                  </div>
-              </ul>
-          </div>
-          <div class="p-2 bd-highlight">
-              <ul class="navbar-nav">
-                  <a class="nav-link active" href="Vacation.html" style="color: black; padding-left: 50px;">
-                  Thing to do</a>
-              </ul>
-          </div>
-        </div>
   
-     
-    
+  
+        <div class="justify-content-center collapse navbar-collapse" style="font-size: 20px;" id="navbarSupportedContent">
+          <ul class="navbar-nav justify-content-center">
+            <li class="navbar-item dropdown">
+              <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="material-icons" style="font-size: 20px; ">commute</span> Transport
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="Airplane.html">Airplane <span class="material-icons" style="font-size: 20px;">flight</span></a>
+                <a class="dropdown-item" href="Train.html">Train <span class="material-icons" style="font-size: 20px;">directions_subway</span></a>
+              </div>
+              </li>
+              <li class="navbar-item dropdown">
+                <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="material-icons" style="font-size: 20px;">roofing</span> Accommodations
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="Hotel.html">Hotel <span class="material-icons" style="font-size: 20px;">bed</span></a>
+                  <a class="dropdown-item" href="Villa.html">Villa <span class="material-icons" style="font-size: 20px;">holiday_village</span></a>
+                </div>
+              </li>
+              <li class="navbar-item">
+                <a class="nav-link" href="Vacation.html">
+                  <span class="material-icons" style="font-size: 20px;">lightbulb</span> Thing to do</a>
+                </li>
+          
+  
+          </ul>
+        </div>
     </nav>
+
+    <br>
+    <h1 class="text-center">Terms</h1>
+
+      <br>
+      <br>
 
     <div class="accordion" id="accordionExample">
     <div class="card">
       <div class="card-header" id="headingone">
-        <h2 class="mb-0">
+        <h5 class="mb-0">
           <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            <h1>syarat dan ketentuan javaloca?</h1>
+            <h3 class="textterms">Syarat & ketentuan</h3>
           </button>
-        </h2>
+        </h5>
       </div>
       <div id="collapseone" class="collapse" aria-labelledby="headingone" data-parent="#accordionExample">
         <div class="card-body">
@@ -111,14 +108,16 @@
 </div>
    </div>   
   </div>  
+
+  <br>
    
    <div class="card">
     <div class="card-header" id="headingThree">
-      <h2 class="mb-0">
+      <h5 class="mb-0">
         <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          <h1>Umum</h1>
+          <h3 class="textterms">Umum</h3>
         </button>
-      </h2>
+      </h5>
     </div>
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
       <div class="card-body">
@@ -129,17 +128,17 @@
 </div>
 </div>
  </div>  
- 
+ <br>
 
  <div class="card">
   <div class="card-header" id="headingone">
-    <h2 class="mb-0">
-      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne " aria-expanded="true" aria-controls="collapseOne">
-        <h1>Penggunaan</h1>
+    <h5 class="mb-0">
+      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse4 " aria-expanded="true" aria-controls="collapse4">
+        <h3 class="textterms">Penggunaan</h3>
       </button>
-    </h2>
+    </h5>
   </div>
-  <div id="collapseone" class="collapse" aria-labelledby="headingone" data-parent="#accordionExample">
+  <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
     <div class="card-body">
       <p>1.	Website ini dan produk-produk, teknologi dan proses yang terdapat atau terkandung dalam Website, dimiliki oleh Kami atau pihak ketiga yang memberi hak kepada Kami. Kecuali untuk penggunaan yang secara tegas diijinkan dan diperbolehkan dalam Syarat dan Ketentuan Umum ini, Anda tidak memiliki ataupun menerima dan tiket.com tidak memberikan hak lain apapun ke Anda atas Website ini, berikut dengan segala data, informasi dan konten didalamnya.</p>
           <p>2.	Dengan menggunakan Website ini atau Layanan yang tersedia didalamnya, maka Anda menyatakan setuju tidak akan men-download, menayangkan atau mentransmisi dengan cara apa pun, dan atau membuat konten apa pun tersedia untuk umum yang tidak konsisten dengan penggunaan yang diijinkan dalam Syarat dan Ketentuan Umum ini.</p>
@@ -150,17 +149,17 @@
       
 </div>
 </div>
-</div>   
+</div>  <br> 
 
 <div class="card">
   <div class="card-header" id="headingone">
-    <h2 class="mb-0">
-      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne " aria-expanded="true" aria-controls="collapseOne">
-        <h1>Layanan Javaloca</h1>
+    <h5 class="mb-0">
+      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse5 " aria-expanded="true" aria-controls="collapse5">
+        <h3 class="textterms">Layanan Javaloca</h3>
       </button>
-    </h2>
+    </h5>
   </div>
-  <div id="collapseone" class="collapse" aria-labelledby="headingone" data-parent="#accordionExample">
+  <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
     <div class="card-body">
       <p>1.	javaloca menyediakan dan menyelenggarakan sistem dan fasilitas pemesanan online secara terpadu ("Layanan"), yang dapat melayani pemesanan/pemesanan: AKOMODASI (hotel, hostel, apartment), TRANSPORTASI (udara-laut-darat), EVENT & ATTRACTION (bioskop, Pertunjukan, Leisure) ("Produk") yang memungkinkan Anda untuk mencari informasi atas Produk yang Anda inginkan, serta melakukan pemesanan dan pembelian dan sekaligus melakukan pembayaran secara online dan aman melalui berbagai sistem dan fasilitas pembayaran yang tersedia.</p>
       <p>2.	Layanan Kami secara umum dapat tersedia secara online selama dua puluh empat jam sehari dan tujuh hari dalam seminggu; kecuali dalam hal adanya perbaikan, peningkatan atau pemeliharaan pada Website Kami.</p>
@@ -179,18 +178,18 @@
       
 </div>
 </div>
-</div>   
+</div>   <br>
 
 
 <div class="card">
   <div class="card-header" id="headingThree">
-    <h2 class="mb-0">
-      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        <h1>Pemesanan/Pembelian Produk</h1>
+    <h5 class="mb-0">
+      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+        <h3 class="textterms" >Pemesanan/Pembelian Produk</h3>
       </button>
-    </h2>
+    </h5>
   </div>
-  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+  <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample">
     <div class="card-body">
       <p>1.	Pemesanan/pembelian Produk dianggap berhasil atau selesai setelah Anda melakukan pelunasan pembayaran dan tiket.com menerbitkan dan mengirim ke Anda, Surat Konfirmasi pemesanan/pembelian. Apabila terjadi perselisihan atau permasalahan, maka data yang terdapat pada javaloca akan menjadi acuan utama dan dianggap sah. </p>
           <p>2.	Dengan menyelesaikan pemesanan/pembelian, maka Anda dianggap setuju untuk menerima: 
@@ -220,17 +219,17 @@
           
 </div>
 </div>
-</div>  
+</div> <br> 
 
 <div class="card">
   <div class="card-header" id="headingThree">
-    <h2 class="mb-0">
-      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        <h1>Harga Produk</h1>
+    <h5 class="mb-0">
+      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+        <h3 class="textterms">Harga Produk</h3>
       </button>
-    </h2>
+    </h5>
   </div>
-  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+  <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordionExample">
     <div class="card-body">
       <p>1.	Kami selalu berupaya untuk menyediakan harga terbaik atas Produk untuk dapat dipesan oleh Anda. Harga yang tertera mungkin memiliki syarat dan ketentuan khusus, sehingga Anda harus memeriksa sendiri dan memahami syarat dan ketentuan khusus yang berlaku terhadap suatu harga atau tarif tertentu sebelum Anda melakukan pemesanan. Anda juga perlu memeriksa dan memahami ketentuan mengenai pembatalan dan pengembalian dana yang secara khusus berlaku untuk Produk dan/atau harga tertentu.</p>
       <p>2.	Harga yang tercantum belum termasuk pajak, pungutan, biaya dan ongkos lainnya yang akan Kami uraian secara tegas pada Website atau Surat Konfirmasi dari Kami. Terkadang harga yang Kami peroleh dari Mitra Penyedia Produk Kami dalam mata uang Negara lain, dan Kami berupaya untuk mengkonversi harga tersebut ke dalam mata uang rupiah, dengan kurs konversi yang terbaik yang dapat Kami peroleh.</p>
@@ -238,17 +237,17 @@
       
 </div>
 </div>
-</div>  
+</div> <br> 
 
 <div class="card">
   <div class="card-header" id="headingThree">
-    <h2 class="mb-0">
-      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        <h1>Pembayaran</h1>
+    <h5 class="mb-0">
+      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+        <h3 class="textterms">Pembayaran</h3>
       </button>
-    </h2>
+    </h5>
   </div>
-  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+  <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordionExample">
     <div class="card-body">
       <p>1.	Pelunasan atas harga pembelian merupakan syarat untuk mendapatkan Produk dari Mitra Penyedia Kami.</p>
           <p>2.	Kami menerima pembayaran dengan sistem pembayaran menggunakan kartu kredit (VISA, Master Card, American Express dan JCB), Virtual Account, transfer antar rekening serta antar bank ke rekening bank tiket.com, dan metode pembayaran lainnya sebagaimana tercantum di Website.     </p>
@@ -271,7 +270,7 @@
           <br>
 </div>
 </div>
-</div>  
+</div>  <br>
 
 <footer>
   <div class="container-fluid footer-bottom bg-dark p-5 mr-auto">
