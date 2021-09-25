@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Train booking form </title>
+        <link rel="stylesheet" href="plane.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" >
+    </head>
+    <body>
+        <div class="booking-form-box">
+            <div class="radio-btn">
+            <input type="radio" class="btn" name="check" checked="checked"> <span>Rounddtrip</span>
+            <input type="radio" class="btn" name="check"><span>One way</span>
+            <input type="radio" class="btn" name="check"><span>Multy-city</span>
+        </div>
+
+        <div class="booking-form">
+            <label>Origin</label>
+            <input type="text" class="form-control" placeholder="Station">
+            <label>Destination</label>
+            <input type="text" class="form-control" placeholder="Station">
+
+            <div class="input-grp">
+                <label>Departing</label>
+            <input type="date" class="form-control select-date">
+            </div>
+
+            <div class="input-grp">
+                <label>Returning</label>
+            <input type="date" class="form-control select-date">
+            </div>
+
+            <div class="input-grp">
+                <label>Adults</label>
+            <input type="number" class="form-control" value="1">
+            </div>
+
+            <div class="input-grp">
+                <label>Children</label>
+            <input type="number" class="form-control" value="0">
+            </div>
+
+            <div class="input-grp">
+                <label>Travel Class</label>
+                <select class="custom-select">
+                    <option value="1">Economy Class</option>
+                    <option value="2">Business Class</option>
+                </select>
+            </div>
+
+            <div class="input-grp">
+                <button type="button" class="btn btn-primary flight">Show Trains</button>
+            </div>
+
+
+            <div>
+
+            </div>
+        
+            
+
+    </body>
+</html>
