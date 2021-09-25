@@ -1,0 +1,182 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+header,section{
+    overflow-x: hidden;
+}
+
+:root{
+    --bggradient: linear-gradient(
+        to bottom,
+        #44b3fd, #ffffff);
+
+        --botomfooter: linear-gradient(
+        to bottom,
+         #ffffff #44b3fd);
+}
+
+header a{
+    color: rgb(10, 27, 73);
+    font-size: 12pt;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+header{
+    background:#44b3fd ;
+    background: var(--bggradient);
+    padding-bottom: 100px;
+}
+
+header .nav-item:last-child{
+padding-right: 6.8em;
+}
+
+header .nav-item{
+    padding: 0.5em;
+}
+
+header .navbar-brand{
+    padding-left: 3.8em;
+}
+
+.section-1{
+    padding: 20vmin 0;
+}
+
+.section-1 .row .col-md-6 .pray img{
+    opacity: 0.8;
+    width: 95%;
+    border-radius: 0.5em;
+}
+
+.section-1 .row .col-md-6:last-child{
+    position: relative;
+}
+
+.section-1 .row .col-md-6 .panel{
+    position: absolute;
+    top: 7vmin;
+    left: -18vmin;
+    background: white;
+    padding: 13vmin 5vmin 15vmin 10vmin;
+    box-shadow: 0px 25px 30px rgb(0, 0, 0);
+    font-family: poppins;
+    z-index: 1;
+}
+
+.section-4 .container h1{
+    font-size: 6vmin;
+    padding-top: 14vmin;
+    font-family:Merriweather ;
+    
+}
+
+.section-4 .card{
+    width: 22rem;
+    margin-top: 10vmin;
+    
+}
+
+.section-4 .card .card-text{
+    padding: 0.7em;
+}
+
+.section-4 .card .card-body>a{
+    font-size: 1.5em;
+    
+}
+
+.section-4 .corousel-item {
+    padding-left: 3em;
+}
+
+footer{
+    background: rgb(255, 255, 255);
+    background: var(--bggradient);
+}
+
+@media only screen and (max-width: 1024px){
+    .section-4 .vacation{
+        display: flex;
+        flex-direction: column;
+        padding-right: 11em;
+        align-items: center;
+
+    }
+    
+    .section-4 .carousel-inner{
+        width: 24rem;
+    }
+   
+}
+
+/* tablet res */
+@media only screen and (max-width: 768px){
+
+    .section-1 .row .col-md-6 .pray img{
+        width: 110%;
+    }
+
+    .section-1 .row .col-md-6 .panel{
+        position: initial;
+        height: initial;
+        width: initial;
+    }
+
+    .section-4 .vacation{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
+    }
+
+    .section-4 .carousel-inner{
+        width: 24rem;
+    }
+
+    header a{
+        text-align: center;
+        color: rgb(10, 27, 73);
+        font-size: 16pt;
+        font-family: Roboto;
+    }
+
+    header .nav-item:last-child{
+        padding-right: 0em;
+        }
+
+
+}
+
+@media only screen and (max-width: 450px){
+
+    .section-1 .row .col-md-6 .pray img{
+        width: 80%;
+    }
+    .section-1 .row .col-md-6 .panel{
+        position: initial;
+        height: initial;
+        width: initial;
+    }
+
+   footer .row .col-md-3{
+       text-align: center;
+   }
+
+}
+
+@media only screen and (max-width: 380px){
+    .section-4 .carousel-inner{
+        width: 21.8rem;
+    } 
+}
+
+
+
+
