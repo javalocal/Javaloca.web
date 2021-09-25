@@ -101,6 +101,14 @@ footer{
     background: var(--bggradient);
 }
 
+.section-10{
+    padding-left: 30%;
+}
+
+section a{
+    color: black;
+}
+
 @media only screen and (max-width: 1024px){
     .section-4 .vacation{
         display: flex;
@@ -117,7 +125,7 @@ footer{
 }
 
 /* tablet res */
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 800px){
 
     .section-1 .row .col-md-6 .pray img{
         width: 110%;
@@ -151,6 +159,10 @@ footer{
         padding-right: 0em;
         }
 
+        footer .row .col-md-3{
+            text-align: center;
+        }
+
 
 }
 
@@ -167,6 +179,15 @@ footer{
 
    footer .row .col-md-3{
        text-align: center;
+   }
+
+   .img-promo{
+       height: 300px;
+   }
+
+   .img-vac{
+       height: 75px;
+       width: 125px;
    }
 
 }
