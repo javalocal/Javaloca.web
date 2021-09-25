@@ -190,6 +190,10 @@ section a{
        width: 125px;
    }
 
+   .img-vacation{
+       height: 200px;
+   }
+
 }
 
 @media only screen and (max-width: 380px){
