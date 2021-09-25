@@ -99,7 +99,7 @@ input::placeholder
 {
     color: #333;
 }
-.trains
+.btn-default
 {
     width: 100%;
     padding: 9px 0!important;
@@ -109,7 +109,8 @@ input::placeholder
     box-shadow: none!important;
     border-radius: 0!important;
 }
-.trains:hover
+
+.btn-default:hover
 {
     background: #fff!important;
     color: #000!important;
