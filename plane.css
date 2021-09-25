@@ -1,6 +1,6 @@
 body
 {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(building.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/building.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -99,7 +99,8 @@ input::placeholder
 {
     color: #333;
 }
-.flight
+
+.btn-default
 {
     width: 100%;
     padding: 9px 0!important;
@@ -109,9 +110,11 @@ input::placeholder
     box-shadow: none!important;
     border-radius: 0!important;
 }
-.flight:hover
+
+.btn-default:hover
 {
     background: #fff!important;
     color: #000!important;
     transition: 0.5;
 }
+
